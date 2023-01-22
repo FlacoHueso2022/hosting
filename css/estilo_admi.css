@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 24px;
+}
+
+/* Inicio del Contenedor A */
+.contenedor_a {
+    border: 2px orange solid;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    /* Permite que dos contenedores queden a un lado */
+    display: inline-flex;
+    background: #002c3e;
+}
+
+.contenedor_img {
+    /* border: 2px #002c3e solid; */
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    /* background: #002c3e; */
+}
+
+.contenedor_a img {
+    width: 100%;
+    height: 100%;
+    /* Animar logo */
+    animation-name: girar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(360deg);
+    }
+}
+
+.contenedor_titulo {
+    /* border: 2px #002c3e solid; */
+    /* background: #002c3e; */
+    text-transform: uppercase; /*Pone las letras en mayusculas*/
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    /* Pone centrado el texto en el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Fin del Contenedor B */
+.contenedor_b {
+    border: 2px green solid;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_d {
+    border: 2px yellow solid;
+}
+
+.contenedor_i {
+    border: 2px blueviolet solid;
+}
